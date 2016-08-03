@@ -14,7 +14,7 @@ module Rack
       end
 
       def livereload_local_uri
-        "#{protocol}://localhost:#{@options[:live_reload_port]}/livereload.js"
+        "#{protocol}://livereload.ngrok.io/livereload.js"
       end
 
       def initialize(body, options)
